@@ -2,24 +2,24 @@ class DRichAX50 extends RecipeBase
 {
 	override void Init()
 	{
-		m_Name = "Drich's AX50"; //create proper string
-		m_IsInstaRecipe = false;//should this recipe be performed instantly without animation
-		m_AnimationLength = 0.5;//animation length in relative time units
-		m_Specialty = -0.02;// value > 0 for roughness, value < 0 for precision
+		m_Name = "Drich's AX50";
+		m_IsInstaRecipe = false;
+		m_AnimationLength = 0.5;
+		m_Specialty = -0.02;
 		
 		
 		//conditions
-		m_MinDamageIngredient[0] = -1;//-1 = disable check
-		m_MaxDamageIngredient[0] = -1;//-1 = disable check
+		m_MinDamageIngredient[0] = -1;
+		m_MaxDamageIngredient[0] = -1;
 		
-		m_MinQuantityIngredient[0] = -1;//-1 = disable check
-		m_MaxQuantityIngredient[0] = -1;//-1 = disable check
+		m_MinQuantityIngredient[0] = -1;
+		m_MaxQuantityIngredient[0] = -1;
 		
-		m_MinDamageIngredient[1] = -1;//-1 = disable check
-		m_MaxDamageIngredient[1] = -1;//-1 = disable check
+		m_MinDamageIngredient[1] = -1;
+		m_MaxDamageIngredient[1] = -1;
 		
-		m_MinQuantityIngredient[1] = -1;//-1 = disable check
-		m_MaxQuantityIngredient[1] = -1;//-1 = disable check
+		m_MinQuantityIngredient[1] = -1;
+		m_MaxQuantityIngredient[1] = -1;
 		//----------------------------------------------------------------------------------------------------------------------
 		
 		//INGREDIENTS
@@ -61,7 +61,7 @@ class DRichAX50 extends RecipeBase
 	}
 	
 
-	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)//gets called upon recipe's completion
+	override void Do(ItemBase ingredients[], PlayerBase player,array<ItemBase> results, float specialty_weight)
 	{
 		Debug.Log("Recipe Do method called","recipes");
 	}
