@@ -3,7 +3,7 @@ modded class PluginRecipesManagerBase extends PluginBase
 	override void RegisterRecipies()
     {
         super.RegisterRecipies();
-        RegisterRecipe(new DRichAX50);
+        RegisterRecipe(new AX50);
 		
     }
 }
